@@ -19,9 +19,10 @@ const ProductImages = () => {
   }, [product])
 
   useEffect(() => {
-    if (!imageZoomRef.current || images.length === 0) return
-
     const imageZoom = imageZoomRef.current
+    if (!imageZoom || images.length === 0) return
+
+    // Update background image
     imageZoom.style.setProperty('--image-url', `url(${images[index]})`)
 
     const handleMouseMove = (event: MouseEvent) => {
@@ -39,11 +40,11 @@ const ProductImages = () => {
     }
 
     imageZoom.addEventListener('mousemove', handleMouseMove)
-    imageZoom.addEventListener('mouseout', handleMouseOut)
+    imageZoom.addEventListener('mouseleave', handleMouseOut)
 
     return () => {
       imageZoom.removeEventListener('mousemove', handleMouseMove)
-      imageZoom.removeEventListener('mouseout', handleMouseOut)
+      imageZoom.removeEventListener('mouseleave', handleMouseOut)
     }
   }, [images, index])
 
@@ -58,16 +59,15 @@ const ProductImages = () => {
             '--zoom-x': '0%',
             '--zoom-y': '0%',
             '--display': 'none',
+            '--image-url': `url(${images[index]})`,
           } as React.CSSProperties
         }
-        className="h-[500px] relative overflow-hidden"
+        className="relative w-full h-[500px] overflow-hidden rounded-md"
       >
-        <Image
+        <img
           src={images[index]}
           alt={`Product Image ${index + 1}`}
-          fill
-          sizes="50vw"
-          className="object-cover rounded-md"
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="flex justify-between gap-4 mt-8">
