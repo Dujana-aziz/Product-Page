@@ -86,7 +86,9 @@ const CartModal = () => {
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-500">Qty. {item.quantity}</span>
                     <button
-                      onClick={() => clearCart()}
+                      onClick={() => {
+                        clearCart()
+                      }}
                       className="text-blue-500 hover:underline cursor-pointer"
                     >
                       Remove
