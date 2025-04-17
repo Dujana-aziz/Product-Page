@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🛍️ Modern E-Commerce Product Page
 
-## Getting Started
+A dynamic and responsive e-commerce product page built using **Next.js 15+**, **React Context API**, and **Tailwind CSS**. It provides a fully interactive shopping cart experience with persistent storage and a clean, testable architecture.
 
-First, run the development server:
+## 📦 Project Setup
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/yourusername/modern-ecommerce-product-page.git
+cd modern-ecommerce-product-page //If needed
+```
+
+2. **Install dependencies:**
+
+```bash
+npm i
+```
+
+3. **Start the development server:**
 
 ```bash
 npm run dev
@@ -14,23 +36,81 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at [localhost](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Key Technical Decisions
 
-## Learn More
+### 🔧 Framework & Styling
 
-To learn more about Next.js, take a look at the following resources:
+Next.js 15+ for file-based routing and optimized performance.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tailwind CSS for utility-first styling and responsive UI.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🧠 State Management
 
-## Deploy on Vercel
+React Context API via a custom CartProvider to manage global cart state cleanly.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 💾 Persistence
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+localStorage used to persist cart and product data across sessions.
+
+Local versioning implemented to avoid stale data.
+
+###🧪 Testing
+Jest and React Testing Library for unit and interaction testing.
+
+Custom mocks for next/image, hooks, and context ensure isolated test environments.
+
+## ▶️ How to Run the Project For Ligthouse
+
+Run Build and than start:
+
+```bash
+npm run Build
+npm start
+```
+
+## ✅ Unit Tests for Critical Components
+
+Run Tests:
+
+```bash
+npm test
+npm run test
+npx jest _tests_/ProductPage.test.tsx // To run a specific test
+npm test add // To run a speciific test
+```
+
+## 🧪 Covered Components & What They Test
+
+### ✅ CartModal
+
+- Renders cart modal with data from localStorage
+- Simulates item removal from cart
+- Asserts console.log call when removing
+
+### ✅ Navbar
+
+- Verifies presence of branding (e.g., name "Anwar")
+
+### ✅ NavIcons
+
+- Tests opening and closing of the cart modal
+- Handles both empty cart and populated cart scenarios
+
+### ✅ ProductImages
+
+- Renders main image from product.
+- Updates image when thumbnail is clicked.
+- Displays a loading state if no product data is present.
+
+### ✅ ProductPage
+
+- Displays product name, price, and description
+- Toggles detailed product text on click
+- Mocks subcomponents (ProductImages, Add) for test isolation
+
+### ✅ Navbar
+
+- Verifies presence of branding (e.g., name "Anwar")
