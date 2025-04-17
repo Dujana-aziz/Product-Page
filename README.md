@@ -62,6 +62,19 @@ The app will be available at [localhost](http://localhost:3000)
 
 - Custom mocks for next/image, hooks, and context ensure isolated test environments.
 
+### ✨ Features Implemented
+
+Here's a quick overview of the main functionality implemented in this product page:
+
+- ✅ **Custom error boundary system** with recovery options  
+- ✅ **Product image gallery** with zoom functionality  
+- ✅ **Color/size variant selection** with real-time updates  
+- ✅ **Add to cart** functionality with quantity selector  
+- ✅ **Expandable product description** for better UX  
+- ✅ **Responsive design** optimized for all devices  
+
+---
+
 ## ▶️ How to Run the Project For Ligthouse
 
 Run Build and than start:
