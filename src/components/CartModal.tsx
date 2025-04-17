@@ -35,7 +35,7 @@ const CartModal = () => {
   }, 0)
 
   return (
-    <div className="w-[90vw] sm:w-[28rem] absolute top-12 left-1/2 -translate-x-1/2 sm:left-auto sm:right-4 sm:translate-x-0 p-4 sm:p-6 rounded-md shadow-xl bg-white flex flex-col gap-6 z-20 max-h-[80vh] overflow-y-auto border-2 border-gray-300">
+    <div className="w-[90vw] sm:w-[28rem] absolute top-12 left-1/2 -translate-x-[98%] sm:left-auto sm:right-4 sm:translate-x-0 p-4 sm:p-6 rounded-md shadow-xl bg-white flex flex-col gap-6 z-20 max-h-[80vh] overflow-y-auto border-2 border-gray-300">
       {localCart.length === 0 ? (
         <div className="">Cart is Empty</div>
       ) : (
@@ -86,9 +86,7 @@ const CartModal = () => {
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-500">Qty. {item.quantity}</span>
                     <button
-                      onClick={() => {
-                        clearCart()
-                      }}
+                      onClick={() => clearCart()}
                       className="text-blue-500 hover:underline cursor-pointer"
                     >
                       Remove
