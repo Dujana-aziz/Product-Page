@@ -43,21 +43,21 @@ The app will be available at [localhost](http://localhost:3000)
 
 ### 🔧 Framework & Styling
 
-Next.js 15+ for file-based routing and optimized performance.
+- Next.js 15+ for file-based routing and optimized performance.
 
-Tailwind CSS for utility-first styling and responsive UI.
+- Tailwind CSS for utility-first styling and responsive UI.
 
 ### 🧠 State Management
 
-React Context API via a custom CartProvider to manage global cart state cleanly.
+- React Context API via a custom CartProvider to manage global cart state cleanly.
 
 ### 💾 Persistence
 
-localStorage used to persist cart and product data across sessions.
+- localStorage used to persist cart and product data across sessions.
 
-Local versioning implemented to avoid stale data.
+- Local versioning implemented to avoid stale data.
 
-###🧪 Testing
+### 🧪 Testing
 Jest and React Testing Library for unit and interaction testing.
 
 Custom mocks for next/image, hooks, and context ensure isolated test environments.
