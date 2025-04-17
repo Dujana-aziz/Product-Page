@@ -2,6 +2,8 @@
 
 A dynamic and responsive e-commerce product page built using **Next.js 15+**, **React Context API**, and **Tailwind CSS**. It provides a fully interactive shopping cart experience with persistent storage and a clean, testable architecture.
 
+---
+
 ## 📦 Project Setup
 
 ### Prerequisites
@@ -38,6 +40,7 @@ bun dev
 
 The app will be available at [localhost](http://localhost:3000)
 
+---
 
 ## ⚙️ Key Technical Decisions
 
@@ -84,6 +87,8 @@ npm run Build
 npm start
 ```
 
+---
+
 ## ✅ Unit Tests for Critical Components
 
 Run Tests:
@@ -127,3 +132,5 @@ npm test add // To run a speciific test
 ### ✅ Navbar
 
 - Verifies presence of branding (e.g., name "Anwar")
+
+---
