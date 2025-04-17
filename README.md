@@ -6,12 +6,10 @@ A dynamic and responsive e-commerce product page built using **Next.js 15+**, **
 
 ## 📚 Table of Contents
 
-- [🛍️ Modern E-Commerce Product Page](#️-modern-e-commerce-product-page)
 - [📦 Project Setup](#-project-setup)
-- [⚙️ Key Technical Decisions](#️-key-technical-decisions)
+- [⚙️ Key Technical Decisions](#-key-technical-decisions)
 - [✨ Features Implemented](#-features-implemented)
-- [🧪 Testing](#-testing)
-- [✅ Unit Tests for Critical Components](#-unit-tests-for-critical-components)
+- [✅ Unit Tests for Critical Components](#-Unit-Tests-for-Critical-Components)
 
 ---
 
@@ -75,6 +73,8 @@ The app will be available at [localhost](http://localhost:3000)
 - Jest and React Testing Library for unit and interaction testing.
 
 - Custom mocks for next/image, hooks, and context ensure isolated test environments.
+
+---
 
 ### ✨ Features Implemented
 
