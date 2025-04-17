@@ -58,9 +58,9 @@ The app will be available at [localhost](http://localhost:3000)
 - Local versioning implemented to avoid stale data.
 
 ### 🧪 Testing
-Jest and React Testing Library for unit and interaction testing.
+- Jest and React Testing Library for unit and interaction testing.
 
-Custom mocks for next/image, hooks, and context ensure isolated test environments.
+- Custom mocks for next/image, hooks, and context ensure isolated test environments.
 
 ## ▶️ How to Run the Project For Ligthouse
 
