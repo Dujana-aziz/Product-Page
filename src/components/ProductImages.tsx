@@ -48,7 +48,7 @@ const ProductImages = () => {
     }
   }, [images, index])
 
-  if (!data) return <div>Loading...</div>
+  if (!product) return <div>Loading...</div>
   return (
     <div className="">
       <div
