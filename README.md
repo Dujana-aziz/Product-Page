@@ -7,7 +7,7 @@ A dynamic and responsive e-commerce product page built using **Next.js 15+**, **
 ## 📚 Table of Contents
 
 - [📦 Project Setup](#-project-setup)
-- [⚙️ Key Technical Decisions](#-Key-Technical-Decisions)
+- [⚙️ Key Technical Decisions](#-key-technical-decisions)
 - [✨ Features Implemented](#-features-implemented)
 - [✅ Unit Tests for Critical Components](#-Unit-Tests-for-Critical-Components)
 
